@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audiobooks de Desenvolvimento Pessoal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="formulario">
+    <h2 class="titulo">Cadastrar Audiobook</h2>
+    <form id="meuFormulario">
+      <label for="titulo">Nome do livro</label>
+      <input type="text" id="titulo" placeholder="Título" required><br>
+
+      <label for="imagem">Capa do livro</label>
+      <input type="url" id="imagem" placeholder="URL da imagem" required><br>
+
+      <label for="paragrafo">Escreva sobre o livro</label>
+      <textarea id="paragrafo" placeholder="Descrição do audiobook"></textarea><br>
+
+      <button type="submit">Adicionar</button>
+    </form>
+  </div>
+
+  <!-- Parede onde os cards serão exibidos -->
+  <div id="colecao"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
